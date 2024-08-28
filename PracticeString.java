@@ -4,8 +4,7 @@
 public class PracticeString {
     public static void main(String[] args) {
 
-        String testString = "";
-        testString = "Hello World";
+        String testString = "Hello World\n";
 
 
 
@@ -16,7 +15,7 @@ public class PracticeString {
 
         String indexOfTest = "e";
         int indexOftestInt = testString.indexOf(indexOfTest);
-        System.out.println("\n" + indexOfTest + " appears at index of " + indexOftestInt);
+        System.out.println(indexOfTest + " appears at index of " + indexOftestInt);
 
         char testChar = 'x';
         int chatAtInt = 6;
@@ -24,7 +23,7 @@ public class PracticeString {
         System.out.println("\nThe char at index " + chatAtInt + " is: " + testChar);
 
         int subStringTestStart = 0;
-        int subStringTestEnd = 2;
+        int subStringTestEnd = testString.indexOf(" ");
         String subStringTest = testString.substring(subStringTestStart, subStringTestEnd);
         System.out.println("\nmy subString is: " + subStringTest);
 
