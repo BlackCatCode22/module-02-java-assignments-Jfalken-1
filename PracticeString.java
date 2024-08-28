@@ -8,17 +8,13 @@ public class PracticeString {
         testString = "Hello World";
 
 
-        boolean isItThere = false;
-        int charInt = 0;
-
-
 
         System.out.println("\nmy practice string is: " + testString);
         System.out.println("my practice string .toLowerCase is: " + testString.toLowerCase());
         System.out.println("my practice string .toUpperCase is: " + testString.toUpperCase());
 
 
-        String indexOfTest = "H";
+        String indexOfTest = "e";
         int indexOftestInt = testString.indexOf(indexOfTest);
         System.out.println("\n" + indexOfTest + " appears at index of " + indexOftestInt);
 
