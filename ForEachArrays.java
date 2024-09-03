@@ -13,13 +13,13 @@ public class ForEachArrays {
 
 
         //Create a 4 element String array named myCars
-        String[] myCars = new String[4];
-
-        // Fill the newly created String[] array with data.
-        myCars[0] = "Ford";
-        myCars[1] = "Honda";
-        myCars[2] = "GMC";
-        myCars[3] = "Jeep";
+//        String[] myCars = new String[4];
+//
+//        // Fill the newly created String[] array with data.
+//        myCars[0] = "Ford";
+//        myCars[1] = "Honda";
+//        myCars[2] = "GMC";
+//        myCars[3] = "Jeep";
 //
 //
 //        // Use a for each loop to output myCars array
@@ -54,23 +54,34 @@ public class ForEachArrays {
 //            System.out.println(aString);
 //        }
 
-        String stringToReverse = "abcdefg";
+        String stringToReverse = "hello world";
+        String reversedString = "";
 
-        for (int i = 0; i < 7; i++) {
-            System.out.println("stringToReverse[" + i + "] is: " + stringToReverse.charAt(i));
+        // Create the reversed string
+        for (int i = stringToReverse.length() - 1; i >= 0; i--) {
+            // Add the current character to the start of the reversedString
+            reversedString += stringToReverse.charAt(i);
         }
 
-        // Create the reverse string
-        String reversedStr = "";
+        // Display the reversed string
+        System.out.println(reversedString);
 
-        System.out.println("reversedStr before reversion loop is: " + stringToReverse);
 
-        for (int i = 6; i >= 0; i--) {
-            char charToAdd = stringToReverse.charAt(i);
-            reversedStr = reversedStr.concat(Character.toString(charToAdd));
-        }
+//        for (int i = 0; i < stringToReverse.length(); i++) {
+//            System.out.println("stringToReverse[" + i + "] is: " + stringToReverse.charAt(i));
+//        }
+//
+//        // Create the reverse string
+//        String reversedStr = "";
+//
+//        System.out.println("reversedStr before reversion loop is: " + stringToReverse);
+//
+//        for (int i = stringToReverse.length() - 1; i >= 0; i--) {
+//            char charToAdd = stringToReverse.charAt(i);
+//            reversedStr = reversedStr.concat(Character.toString(charToAdd));
+//        }
 
-        System.out.println("the reversed string is: " + reversedStr);
+//        System.out.println("the reversed string is: " + reversedStr);
 
 
         System.out.println("\n My for loop is done");
